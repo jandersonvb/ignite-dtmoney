@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { darken, transparentize } from 'polished';
 
 export const Container = styled.form`
@@ -99,6 +100,4 @@ export const RadioBox = styled.button<RadioBoxProps>`
      font-size: 1rem;
      color: var(--text-title);
   }
-
-
 `;

@@ -7,6 +7,8 @@ export const Container = styled.div`
     width: 100%;
     border-spacing: 0 0.5rem;
 
+ 
+
     th {
       color: var(--text-body);
       font-weight: 400;
@@ -21,6 +23,12 @@ export const Container = styled.div`
       background: var(--shape);
       color: var(--text-body);
       border-radius: 0.25rem;
+
+      transition: transform 0.2s;
+
+    &:hover {
+      transform: translateX(0.5rem);
+    }
 
       &:first-child {
         color: var(--text-title);

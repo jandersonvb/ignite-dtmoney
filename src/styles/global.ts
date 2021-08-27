@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    
     --red: #E52E4D; 
     --green: #33CC95;
     --blue: #5429CC;
@@ -22,14 +21,15 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+    /** 1rem = font-size da nossa página */
    //font-size: 16px (Desktop)
    html {
     @media (max-width: 1080px) {
-      font-size: 93.75%;
+      font-size: 93.75%; //15px  => 16 x 0,9375
     }
 
     @media (max-width: 720px) {
-      font-size: 87.5%
+      font-size: 87.5% //14px  => 16 x 0,875
     }
   }
 
@@ -37,7 +37,9 @@ export const GlobalStyle = createGlobalStyle`
     background: var(--background);
     -webkit-font-smoothing: antialiased;
   }
-
+  /**Por padrão a tag input, textarea e button, não importam a font family do body
+    por isso estamos passando para essas tags.
+   */
   body, input, textarea, button { 
     font-family: 'Poppins', sans-serif;
     font-weight: 400;

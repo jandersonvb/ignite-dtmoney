@@ -4,13 +4,21 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: -10rem;
+  margin-top: -8rem;
 
+  
   div {
     background: var(--shape);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     color: var(--text-title);
+
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(1rem);
+    }
+
 
     header {
       display: flex;
